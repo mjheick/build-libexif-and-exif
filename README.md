@@ -1,5 +1,7 @@
 # exif
-Basic building and usage of exif from libexif
+I got this little project to take my huge EMPIRE OF DIGITAL IMAGES and make sure everything has the necessary minimums.
+
+Also called "Basic building and usage of exif from libexif"
 
 # Repositories
 - [libexif](https://github.com/libexif/libexif)
@@ -32,7 +34,7 @@ make
 ```
 Final file is in repository/exif/exif
 
-# Time, GPS, Comment
+# Date/Time, GPS, UserComment
 
 ## Date/Time
 ```
