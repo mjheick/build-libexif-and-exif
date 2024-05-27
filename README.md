@@ -2,8 +2,8 @@
 Basic building and usage of exif from libexif
 
 # Repositories
-[libexif](https://github.com/libexif/libexif)
-[exif](https://github.com/libexif/exif)
+- [libexif](https://github.com/libexif/libexif)
+- [exif](https://github.com/libexif/exif)
 
 # Building
 Get your dependencies ([Rocky 9.3](https://rockylinux.org) instructions):
@@ -38,7 +38,7 @@ Final file is in repository/exif/exif
 ```
 ```
 
-## GPD
+## GPS
 ```
 ```
 
