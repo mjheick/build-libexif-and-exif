@@ -38,23 +38,28 @@ Final file is in repository/exif/exif
 
 ## Date/Time
 ```
-./exif --tag=0x0132 image.jpg # 'Date and Time'
-./exif --tag=0x9003 image.jpg # 'Date and Time (Original)'
-./exif --tag=0x9004 image.jpg # 'Date and Time (Digitized)'
+./exif --ifd=0 --tag=0x0132 image.jpg # 'Date and Time'
 ./exif --ifd=0 --tag=0x0132 --set-value="2010:10:10 10:10:10" image.jpg
+
+./exif --tag=0x9003 image.jpg # 'Date and Time (Original)'
 ./exif --ifd=EXIF --tag=0x9003 --set-value="2010:10:10 10:10:10" image.jpg
+
+./exif --tag=0x9004 image.jpg # 'Date and Time (Digitized)'
 ./exif --ifd=EXIF --tag=0x9004 --set-value="2010:10:10 10:10:10" image.jpg
 ```
 
 ## GPS
 ```
 ./exif --ifd=GPS --tag=0x0001 image.jpg # 'North or South Latitude'
-./exif --ifd=GPS --tag=0x0002 image.jpg # 'Latitude'
-./exif --ifd=GPS --tag=0x0003 image.jpg # 'East or West Longitude'
-./exif --ifd=GPS --tag=0x0004 image.jpg # 'Longitude'
 ./exif --ifd=GPS --tag=0x0001 --set-value="S" image.jpg
+
+./exif --ifd=GPS --tag=0x0002 image.jpg # 'Latitude'
 ./exif --ifd=GPS --tag=0x0002 --set-value="10 1 10 2 10 4" image.jpg
+
+./exif --ifd=GPS --tag=0x0003 image.jpg # 'East or West Longitude'
 ./exif --ifd=GPS --tag=0x0003 --set-value="E" image.jpg
+
+./exif --ifd=GPS --tag=0x0004 image.jpg # 'Longitude'
 ./exif --ifd=GPS --tag=0x0004 --set-value="10 1 10 2 10 4"  image.jpg
 ```
 Note: GPS rational-type (fractional) data is in the format:
@@ -65,6 +70,6 @@ where A/B C/D E/F
 
 ## UserComment
 ```
-./exif --tag=0x9286 image.jpg # 'User Comment'
+./exif --ifd=EXIF --tag=0x9286 image.jpg # 'User Comment'
 ./exif --ifd=EXIF --tag=0x9286 --set-value="Awesome" image.jpg
 ```
