@@ -41,7 +41,7 @@ Final file is in repository/exif/exif
 ./exif --tag=0x0132 image.jpg # 'Date and Time'
 ./exif --tag=0x9003 image.jpg # 'Date and Time (Original)'
 ./exif --tag=0x9004 image.jpg # 'Date and Time (Digitized)'
-./exif --ifd=EXIF --tag=0x0132 --set-value="2010:10:10 10:10:10" image.jpg # Doesn't change
+./exif --ifd=0 --tag=0x0132 --set-value="2010:10:10 10:10:10" image.jpg
 ./exif --ifd=EXIF --tag=0x9003 --set-value="2010:10:10 10:10:10" image.jpg
 ./exif --ifd=EXIF --tag=0x9004 --set-value="2010:10:10 10:10:10" image.jpg
 ```
