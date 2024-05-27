@@ -8,11 +8,20 @@ Also called "Basic building and usage of exif from libexif"
 - [exif](https://github.com/libexif/exif)
 
 # Building
-Get your dependencies ([Rocky 9.3](https://rockylinux.org) instructions):
+Gave this a try across a couple platforms from minimal installs, just 'cuz.
+
+## Ubuntu 20.04 Desktop
+Get your dependencies:
+```
+apt install gcc make libpopt-dev
+```
+## Rocky 9.3
+Get your dependencies:
 ```
 yum install tar wget bzip2 gcc popt-devel
 ```
 
+## Build Instructions
 Download and build [libexif 0.6.24](https://github.com/libexif/libexif/releases/tag/v0.6.24).
 ```
 wget 'https://github.com/libexif/libexif/releases/download/v0.6.24/libexif-0.6.24.tar.bz2'
