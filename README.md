@@ -22,12 +22,12 @@ yum install tar wget bzip2 gcc popt-devel
 ```
 
 ## Build Instructions
-Download and build [libexif 0.6.24](https://github.com/libexif/libexif/releases/tag/v0.6.24).
+Download and build [libexif 0.6.25](https://github.com/libexif/libexif/releases/tag/v0.6.25).
 ```
-wget 'https://github.com/libexif/libexif/releases/download/v0.6.24/libexif-0.6.24.tar.bz2'
-bzip2 -d libexif-0.6.24.tar.bz2
-tar -xf libexif-0.6.24.tar
-cd libexif-0.6.24
+wget 'https://github.com/libexif/libexif/releases/download/v0.6.25/libexif-0.6.25.tar.bz2'
+bzip2 -d libexif-0.6.25.tar.bz2
+tar -xf libexif-0.6.25.tar
+cd libexif-0.6.25/
 ./configure
 make
 sudo make install
