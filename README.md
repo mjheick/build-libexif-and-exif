@@ -1,4 +1,4 @@
-# exif
+# build-libexif-and-exif
 I got this little project to take my huge EMPIRE OF DIGITAL IMAGES and make sure everything has the necessary minimums.
 
 Also called "Basic building and usage of exif from libexif"
